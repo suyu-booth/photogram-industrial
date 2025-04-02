@@ -75,6 +75,7 @@ gem "cloudinary"
 gem "kaminari"
 gem "devise"
 
+
 group :development do
   gem "annotaterb"
   gem "better_errors"
