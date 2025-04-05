@@ -1,0 +1,11 @@
+<h1>
+  discover
+</h1>
+
+<p>posts liked by people you follow</p>
+
+<div>
+<% @user.discover.each do |photo| %>
+  <%= render "photos/photo", photo: photo %>
+<% end %>
+</div>

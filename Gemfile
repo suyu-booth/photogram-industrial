@@ -74,6 +74,7 @@ gem "carrierwave"
 gem "cloudinary"
 gem "kaminari"
 gem "devise"
+gem "carrierwave"
 
 
 group :development do
