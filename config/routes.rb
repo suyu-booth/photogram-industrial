@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "photos#index"
+  root "users#feed"
   resources :likes
   resources :follow_requests
   resources :comments
@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   get ":username" => "users#show", as: :user
   get ":username/liked" => "users#liked", as: :liked
+  get ":username/feed" => "users#feed", as: :feed
+  get ":username/discover" => "users#discover", as: :discover
   # Render dynamic PWA files from app/views/pwa/* (remember to link manifest in application.html.erb)
   # get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
